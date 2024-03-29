@@ -1,14 +1,19 @@
 import BookSearch from "./BookSearch";
 import Header from "./Header";
-import SearchResult from "./SearchResults";
+import SearchResult from "./SearchResult";
 
 
-export default function Layout() {
+export default function Layout({children}) {
     return(
         <>
-        <Header/>
-        <BookSearch/>
-        <SearchResult/>
+        <header>
+           
+        </header>
+        <main>
+            {children}
+        </main>
+        
         </>
     )
+    
 }
