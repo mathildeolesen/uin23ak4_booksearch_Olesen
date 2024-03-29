@@ -1,6 +1,6 @@
 import BookSearch from "./BookSearch";
 import Header from "./Header";
-import SearchResult from "./SearchResult";
+import SearchResults from "./SearchResults";
 
 
 export default function Layout({children}) {

@@ -1,0 +1,38 @@
+
+#root {
+    width: 100vw;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1em;
+    width: 100%;
+
+    article {
+        height: 17em;
+        margin: 0 auto;
+        padding: 0px 10px 0px 10px;
+        width: 13em;
+        border: 0.2em solid green;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            margin: 0 auto;
+            display: -webkit-box; 
+            -webkit-box-orient: vertical; 
+            -webkit-line-clamp: 2; 
+            overflow: hidden; 
+            text-overflow: ellipsis;
+        }
+    }
+}

@@ -1,12 +1,7 @@
 import BookCard from "./BookCard"
 
 
-export default function SearchResult({content}) {
-
-
-    const testData = [{title: "Bond", year: 2002}, {title: "James", year: 2003}, {title: "Bond", year: 2004}]
-
-    console.log("hei" + content)
+export default function SearchResults({content}) {
 
     return (
         <>
