@@ -11,14 +11,14 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 1em;
+    gap: .5em;
     width: 100%;
 
     article {
-        height: 17em;
+        height: 25em;
         margin: 0 auto;
         padding: 0px 10px 0px 10px;
-        width: 13em;
+        width: 13.9em;
         border: 0.2em solid green;
         border-radius: 10px;
 
@@ -27,6 +27,7 @@ section {
         justify-content: center;
 
         h3 {
+            min-height: 55px;
             margin: 0 auto;
             display: -webkit-box; 
             -webkit-box-orient: vertical; 
@@ -34,5 +35,46 @@ section {
             overflow: hidden; 
             text-overflow: ellipsis;
         }
+
+        p {
+            margin: 5px 0px 5px 0px;
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .author {
+            display: -webkit-box; 
+            -webkit-box-orient: vertical; 
+            -webkit-line-clamp: 1; 
+            overflow: hidden; 
+            text-overflow: ellipsis;
+        }
+
+        img {
+            display: block;
+            margin: 5px auto;
+            width: fit-content;
+            height: 180px;
+        }
+
+        .noCover {
+            margin: 5px auto;
+            color: red;
+            background-color: beige;
+            width: 170px;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                display: table;
+                margin: 0 auto;
+            }
+        }
+
+        
+
     }
 }

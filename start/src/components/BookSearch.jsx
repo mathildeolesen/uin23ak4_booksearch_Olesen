@@ -11,6 +11,10 @@ export default function BookSearch({setQuery}) {
 
     const handleChange = (event) => {
         setSearch(event.target.value)
+
+        if (event.target.value.length >= 3) {
+            setQuery(event.target.value);
+          }
     }
 
 

@@ -12,15 +12,15 @@ function App() {
   const [query, setQuery] = useState("James Bond")
 
   const getContent = async() => {
-    await fetch(`https://openlibrary.org/search.json?q=${query}`)
+    await fetch(`https://openlibrary.org/search.json?title=${query}`)
     .then(response => response.json())
     .then(data => setContent(data.docs)) // .docs er fra API-et, hvor innholdet vi er interessert i ligger i "docs" arrayen
     .catch(error => console.error(error))
   }
 
   useEffect(() => {
-    getContent()
-  })
+    getContent();
+  }, [query]);
 
   console.log(content)
 
