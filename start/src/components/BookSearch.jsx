@@ -22,7 +22,7 @@ export default function BookSearch({setQuery}) {
         <form onSubmit={handleSubmit}>
             <label htmlFor="search">Search for book:</label>
             <input type="text" id="search" placeholder="James Bond" onChange={handleChange}></input>
-            <input type="submit" value="Search"></input>
+            
         </form>
     )
 }
