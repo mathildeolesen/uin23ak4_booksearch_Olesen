@@ -5,6 +5,7 @@ import BookSearch from './components/BookSearch'
 import { Route, Routes } from 'react-router-dom'
 import SearchResults from './components/SearchResults'
 import Home from './Home'
+import BookPage from './components/BookPage'
 
 function App() {
 
@@ -30,8 +31,9 @@ function App() {
     <>
      <Layout>
       <Routes>
-      <Route index element={<Home content={content} setQuery={setQuery}/>}/>
-      <Route path="/search" element={<SearchResults content={content}/>} />
+        <Route index element={<Home content={content} setQuery={setQuery}/>}/>
+        <Route path="/search" element={<SearchResults content={content}/>} />
+        <Route path="/book/:slug" element={<BookPage/>} />
       </Routes>
      </Layout>
     </>

@@ -8,8 +8,6 @@ export default function Home({content, setQuery}) {
     
     return (
         <>
-        <h1>FindABook</h1>
-        {/*<Link to="/search"><h2>Click meg</h2></Link>*/}
         <BookSearch setQuery={setQuery}/>
         <SearchResults content={content}/>
         </>

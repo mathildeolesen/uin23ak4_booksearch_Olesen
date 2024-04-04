@@ -1,7 +1,11 @@
+@import 'variables';
+@import 'header';
+@import 'bookpage';
+
 
 body {
-    background-color: #f5f4f3; 
-    color: #1c1b1b;
+    background-color: $colorBackgroundWhite; 
+    color: $colorOffBlack;
 }
 
 
@@ -28,7 +32,7 @@ form {
     input[type=text] {
         border: 1px solid #ffffff;
         background-color: #ffffff;
-        color:#1c1b1b;
+        color:$colorOffBlack;
         border-radius: 10px;
         padding: 1rem;
         margin: 0 0 0.5rem 0;
@@ -44,7 +48,7 @@ section {
     width: 100%;
 
     article:nth-child(2n+1) {
-        background-color: #DAB88B; /* Første farge */
+        background-color: $colorAccentBeige; /* Første farge */
     }
 
     article:nth-child(2n+2) {
@@ -75,13 +79,20 @@ section {
             text-overflow: ellipsis;
         }
 
+        img {
+            display: block;
+            margin: 5px auto;
+            min-width: 180px;
+            height: 180px;
+        }
+
         .bookinfo {
 
             display: flex;
             flex-direction: column;
             p {
                 margin: 5px 0px 5px 0px;
-                color: #1c1b1b;
+                color: $colorOffBlack;
                 span {
                     font-weight: 700;
                 }
@@ -105,13 +116,6 @@ section {
             }
         }
 
-        img {
-            display: block;
-            margin: 5px auto;
-            width: fit-content;
-            height: 180px;
-        }
-
         .noCover {
             margin: 5px auto;
             color: red;
@@ -127,8 +131,6 @@ section {
                 margin: 0 auto;
             }
         }
-
-        
-
     }
 }
+

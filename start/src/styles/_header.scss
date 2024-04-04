@@ -1,0 +1,9 @@
+@import 'variables';
+
+a h1 {
+    color: $colorOffBlack;
+
+    &:hover {
+        color: $colorHoverBlue
+    }
+}

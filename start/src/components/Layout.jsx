@@ -6,9 +6,7 @@ import SearchResults from "./SearchResults";
 export default function Layout({children}) {
     return(
         <>
-        <header>
-           
-        </header>
+        <Header/>
         <main>
             {children}
         </main>

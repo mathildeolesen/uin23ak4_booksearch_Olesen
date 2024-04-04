@@ -8,7 +8,7 @@ export default function SearchResults({content}) {
         <>
         <section>
         {content?.map(item =>
-        <BookCard key={item.key} 
+        <BookCard key= {item.key} id={item.key} 
         title={item.title}
         cover_edition_key={item.cover_edition_key} 
         author={
