@@ -46,18 +46,19 @@ section {
     flex-direction: row;
     gap: .5em;
     width: 100%;
+    justify-content: center;
 
     article:nth-child(2n+1) {
-        background-color: $colorAccentBeige; /* Første farge */
+        background-color: $colorAccentBeige;
     }
 
     article:nth-child(2n+2) {
-        background-color: #8FBDD3; /* Andre farge */
+        background-color: #8FBDD3;
     }
 
     article {
         height: 25em;
-        margin: 0 auto;
+        //margin: 0 auto;
         padding: 0px 10px 0px 10px;
         width: 13.9em;
         border: 0.2em solid #f2e8e8;
