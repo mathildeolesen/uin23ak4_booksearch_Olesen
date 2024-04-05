@@ -13,8 +13,8 @@
         color: $colorOffBlack;
         display: flex;
         justify-content: center;
-        align-items: flex-start; /* Juster elementer vertikalt i midten */
-        flex-direction: row; /* Plasser elementer ved siden av hverandre */
+        align-items: flex-start; /* Justerer elementer vertikalt i midten */
+        flex-direction: row;
 
         a {
             color: $colorTextWhite;
@@ -66,7 +66,7 @@
         margin: 5px auto;
         color: red;
         background-color: beige;
-        width: 170px;
+        width: 180px;
         height: 180px;
         display: flex;
         justify-content: center;

@@ -4,6 +4,7 @@ export default function BookSearch({setQuery}) {
 
     const [search, setSearch] = useState("")
     
+    // Hvis enter - hvis man søker med to karakterer (f.eks: if), så kan man søke med enter. 
     const handleSubmit = (e) => {
         e.preventDefault()
         setQuery(search)
@@ -21,8 +22,7 @@ export default function BookSearch({setQuery}) {
     return (
         <form onSubmit={handleSubmit}>
             <label htmlFor="search">Search for book:</label>
-            <input type="text" id="search" placeholder="James Bond" onChange={handleChange}></input>
-            
+            <input type="text" id="search" placeholder="James Bond" onChange={handleChange}></input>  
         </form>
     )
 }
